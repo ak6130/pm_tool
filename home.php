@@ -10,13 +10,11 @@
 
 		foreach($page->children() as $product) {
 			$image = $product->product_image->url;
-			$render = "<div class='product'>"
-					. "<div class='product-description'>"
-
-						. "<img src='$image' height='150px'>"
-						. "<a href='$product->url'>$product->title</a>"
-						. "<p>$product->product_description</p>"
-					. "</div>"
+			$render = "<div class='card' style='width: 33%;'>"
+						. "<img src='$image' class='card-img-top'>"
+						"<div class='card-body'>"
+						"<h5 class='card-title'><a href='$product->url'>$product->title</a></h5>"						
+						. "<p class='card-text'>$product->product_description</p>"
 					. "<button class='snipcart-add-item btn btn-info' 
 									data-item-id='$product->product_id'
 									data-item-name='$product->product_name'
@@ -26,8 +24,8 @@
 									data-item-description='$product->product_description'>
 									$product->product_name kaufen
 							</button>"
-				.	"</a>"
-			. "</div>";
+			. 		"</div>"
+					"</div>";
 
 			echo $render;
 		}
