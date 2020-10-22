@@ -12,8 +12,8 @@
 			$image = $product->product_image->url;
 			$render = "<div class='card' style='width: 33%;'>"
 						. "<img src='$image' class='card-img-top'>"
-						"<div class='card-body'>"
-						"<h5 class='card-title'><a href='$product->url'>$product->title</a></h5>"						
+						. "<div class='card-body'>"
+						. "<h5 class='card-title'><a href='$product->url'>$product->title</a></h5>"						
 						. "<p class='card-text'>$product->product_description</p>"
 					. "<button class='snipcart-add-item btn btn-info' 
 									data-item-id='$product->product_id'
@@ -25,7 +25,7 @@
 									$product->product_name kaufen
 							</button>"
 			. 		"</div>"
-					"</div>";
+			.		"</div>";
 
 			echo $render;
 		}
