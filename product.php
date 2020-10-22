@@ -1,6 +1,6 @@
 <?php
 
-include('./_head.php'); // include header markup ?>
+include('./inc/_head.php'); // include header markup ?>
 
 	<div class='product'><?php
 
@@ -28,4 +28,4 @@ include('./_head.php'); // include header markup ?>
 	?></div><!-- end content -->
 
 <?php include('./_snipcart.php'); ?>
-<?php include('./_foot.php'); // include footer markup ?>
+<?php include('./inc/_foot.php'); // include footer markup ?>
