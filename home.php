@@ -25,6 +25,7 @@
 									$product->product_name kaufen
 							</button>"
 			. 		"</div>"
+			.		"<div class='card-footer'> <small class='text-muted'>$product->title</small> </div>"
 			.		"</div>";
 
 			echo $render;
