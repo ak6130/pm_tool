@@ -14,7 +14,7 @@
 					. "<div class='product-description'>"
 
 						. "<img src='$image' height='150px'>"
-						. "<a href='$product->url'>$product->title"
+						. "<a href='$product->url'>$product->title</a>"
 						. "<p>$product->product_description</p>"
 					. "</div>"
 					. "<button class='snipcart-add-item btn btn-info' 
