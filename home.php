@@ -7,11 +7,10 @@
 	echo "<div class='products'>";
 
 		echo $page->body;
-
+	echo "<div class='card-group'>";	
 		foreach($page->children() as $product) {
 			$image = $product->product_image->url;
-			$render = "<div class='card-group'>"
-						.  "<div class='card' style='width: 33%;'>"
+			$render = "<div class='card' style='width: 33%;'>"
 						. "<img src='$image' class='card-img-top'>"
 						. "<div class='card-body'>"
 						. "<h5 class='card-title'><a href='$product->url'>$product->title</a></h5>"						
@@ -26,12 +25,12 @@
 									$product->product_name kaufen
 							</button>"
 			. 		"</div>"
-			.		"</div>"
 			.		"</div>";
 
 			echo $render;
 		}
 
+	echo "</div>";
 	echo "</div>";
 
 
