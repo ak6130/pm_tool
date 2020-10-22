@@ -1,4 +1,4 @@
-<?php include('./_head.php'); // include header markup ?>
+<?php include('./inc/_head.php'); // include header markup ?>
 
 <div id='content'><?php
 
@@ -38,4 +38,4 @@
 ?></div><!-- end content -->
 
 <?php include('./_snipcart.php');?>
-<?php include('./_foot.php'); // include footer markup ?>
+<?php include('./inc/_foot.php'); // include footer markup ?>
