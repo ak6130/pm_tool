@@ -17,7 +17,7 @@
 						. "<a href='$product->url'>$product->title"
 						. "<p>$product->product_description</p>"
 					. "</div>"
-					. "<button class='snipcart-add-item'
+					. "<button class='snipcart-add-item btn btn-info' 
 									data-item-id='$product->product_id'
 									data-item-name='$product->product_name'
 									data-item-price='$product->product_price'
