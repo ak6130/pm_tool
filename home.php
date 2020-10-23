@@ -16,7 +16,7 @@
 			$rowCount++;
 			$image = $product->product_image->url;
 			$render = "<div class='col-lg-" . $bootstrapColWidth . "'>"
-						. "<img src='https://via.placeholder.com/300' class='card-img-top' style='width:300px;height:300px'>"
+						. "<img src='https://via.placeholder.com/300' class='card-img-top'>"
 						. "<h5 class='card-title'><a href='$product->url'>$product->title</a></h5>"						
 						. "<p class='card-text'>$product->product_description</p>"
 					. "<button class='snipcart-add-item btn btn-info' 
