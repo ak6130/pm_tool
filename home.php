@@ -7,8 +7,12 @@
 	echo "<div class='products'>";
 
 		echo $page->body;
-	echo "<div class='card-group'>";	
+		
+		$numofCols = 4;
+		$rowCount = 0; 
+		$bootstrapColWidth = 12 / $numofCols;
 		foreach($page->children() as $product) {
+			if($rowCount % $numofCols == 0) { echo "<div class='card-group'>";}
 			$image = $product->product_image->url;
 			$render = "<div class='card' style='width: 33%;'>"
 						. "<img src='$image' class='card-img-top'>"
@@ -24,11 +28,12 @@
 									data-item-description='$product->product_description'>
 									$product->product_name kaufen
 							</button>"
-			. 		"</div>"
-			.		"<div class='card-footer'> <small class='text-muted'>$product->title</small> </div>"
-			.		"</div>";
+			. 			  "</div>"
+			.		  "<div class='card-footer'> <small class='text-muted'>$product->title</small> </div>"
+			.		  "</div>";
 
 			echo $render;
+			if($rowCount % $numofCols == 0) { echo "<div>";}
 		}
 
 	echo "</div>";
