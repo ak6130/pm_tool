@@ -15,7 +15,7 @@
 			if($rowCount % $numofCols == 0) { echo "<div class='row mt-2'>";}
 			$rowCount++;
 			$image = $product->product_image->url;
-			$render = "<div class='col-sm-" . $bootstrapColWidth . "'>"
+			$render = "<div class='col-lg-" . $bootstrapColWidth . "'>"
 						. "<img src='https://via.placeholder.com/300' class='card-img-top' style='width:300px;height:300px'>"
 						. "<h5 class='card-title'><a href='$product->url'>$product->title</a></h5>"						
 						. "<p class='card-text'>$product->product_description</p>"
