@@ -1,6 +1,6 @@
 <?php include('./inc/_head.php'); // include header markup ?>
 
-<div id='content'><?php
+<div class="container-fluid"><?php
 
 	echo "<h3 class='site-title'>" . $page->get('headline|title') . "</h1>";
 
@@ -36,7 +36,7 @@
 	echo "</div>";
 
 
-?></div><!-- end content -->
+?></div><!-- end container-fluid -->
 
 <?php include('./_snipcart.php');?>
 <?php include('./inc/_foot.php'); // include footer markup ?>

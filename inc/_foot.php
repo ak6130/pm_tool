@@ -1,7 +1,3 @@
-
-
-	</div><!--/#main-->
-
 	<!-- footer -->
 	<footer id='footer'>
 		<p>
