@@ -12,7 +12,7 @@
 		$rowCount = 0; 
 		$bootstrapColWidth = 12 / $numofCols;
 		foreach($page->children() as $product) {
-			if($rowCount % $numofCols == 0) { echo "<div class='row'>";}
+			if($rowCount % $numofCols == 0) { echo "<div class='row mt-2'>";}
 			$rowCount++;
 			$image = $product->product_image->url;
 			$render = "<div class='col-md-" . $bootstrapColWidth . "'>"
