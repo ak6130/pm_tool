@@ -13,12 +13,12 @@
 		$bootstrapColWidth = 12 / $numofCols;
 		foreach($page->children() as $product) {
 			if($rowCount % $numofCols == 0) { echo "<div class='row'>";}
+			$rowCount++;
 			$image = $product->product_image->url;
 			$render = "<div class='col-md-" . $bootstrapColWidth . "'>"
 						. "<img src='$image' class='card-img-top'>"
 						. "<h5 class='card-title'><a href='$product->url'>$product->title</a></h5>"						
 						. "<p class='card-text'>$product->product_description</p>"
-						. echo $rowCount % $numofCols;
 					. "<button class='snipcart-add-item btn btn-info' 
 									data-item-id='$product->product_id'
 									data-item-name='$product->product_name'
