@@ -14,9 +14,8 @@
 		foreach($page->children() as $product) {
 			if($rowCount % $numofCols == 0) { echo "<div class='card-group'>";}
 			$image = $product->product_image->url;
-			$render = "<div class='card' style='width: 33%;'>"
+			$render = "<div class='col-md-" . $bootstrapColWidth . "'>"
 						. "<img src='$image' class='card-img-top'>"
-						. "<div class='card-body'>"
 						. "<h5 class='card-title'><a href='$product->url'>$product->title</a></h5>"						
 						. "<p class='card-text'>$product->product_description</p>"
 					. "<button class='snipcart-add-item btn btn-info' 
@@ -28,15 +27,11 @@
 									data-item-description='$product->product_description'>
 									$product->product_name kaufen
 							</button>"
-			. 			  "</div>"
-			.		  "<div class='card-footer'> <small class='text-muted'>$product->title</small> </div>"
 			.		  "</div>";
 
 			echo $render;
 			if($rowCount % $numofCols == 0) { echo "<div>";}
 		}
-
-	echo "</div>";
 	echo "</div>";
 
 
