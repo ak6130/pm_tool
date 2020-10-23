@@ -12,7 +12,7 @@
 		$rowCount = 0; 
 		$bootstrapColWidth = 12 / $numofCols;
 		foreach($page->children() as $product) {
-			if($rowCount % $numofCols == 0) { echo "<div class='card-group'>";}
+			if($rowCount % $numofCols == 0) { echo "<div class='row'>";}
 			$image = $product->product_image->url;
 			$render = "<div class='col-md-" . $bootstrapColWidth . "'>"
 						. "<img src='$image' class='card-img-top'>"
@@ -30,7 +30,7 @@
 			.		  "</div>";
 
 			echo $render;
-			if($rowCount % $numofCols == 0) { echo "<div>";}
+			if($rowCount % $numofCols == 0) { echo "</div>";}
 		}
 	echo "</div>";
 
